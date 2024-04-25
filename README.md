@@ -31,71 +31,68 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ```
+### Register Num : 212223230122
+### Name : MANOJ M
+
 math.html
 
+
+
+
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<title>Area of Rectangle</title>
+<title>Area of Surface</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <style type="text/css">
-body 
-{
-background-color:rgb(92, 229, 255);
+body {
+    background-color: whitesmoke(252, 159, 255);
 }
 .edge {
-width: 1440px;
-margin-left: auto;
-margin-right: auto;
-padding-top: 250px;
-padding-left: 300px;
+    width: 100%;
+    padding-top: 250px;
+    text-align: center;
 }
-.box {
-display:block;
-border: Thick dashed rgb(255, 0, 212);
-width: 500px;
-min-height: 300px;
-font-size: 20px;
-background-color:rgb(255, 255, 255);
+
+.formelt {
+    color: black;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 6px;
 }
-.formelt{
-color:orange;
-text-align: center;
-margin-top: 7px;
-margin-bottom: 6px;
-}
-h1
-{
-color:rgb(60, 0, 255);
-text-align: center;
-padding-top: 20px;
+h1 {
+    color: blue;
+    padding-top: 20px;
 }
 </style>
 </head>
 <body>
 <div class="edge">
-<div class="box">
-<h1>Area of a squareprism</h1>
-<form method="POST">
-{% csrf_token %}
-<div class="formelt">
-Base : <input type="text" name="base" value="{{a}}"></input>(in m)<br/>
-</div>
-<div class="formelt">
-Height : <input type="text" name="height" value="{{h}}"></input>(in m)<br/>
-</div>
-<div class="formelt">
-<input type="submit" value="Calculate"></input><br/>
-</div>
-<div class="formelt">
-Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/>
-</div>
-</form>
-</div>
+    <div class="box">
+        <h1>Server Side Processing</h1>
+        <h3>MANOJ M (212223230122)</h3>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="formelt">
+                Radius: <input type="text" name="radius" value="{{r}}">m<br/>
+            </div>
+            <div class="formelt">
+                Height: <input type="text" name="height" value="{{h}}">m<br/>
+            </div>
+            <div class="formelt">
+                <input type="submit" value="Calculate"><br/>
+            </div>
+            <div class="formelt">
+                Area: <input type="text" name="area" value="{{area}}">m<sup>2</sup><br/>
+            </div>
+        </form>
+    </div>
 </div>
 </body>
 </html>
+
 
 views.py
 
@@ -133,7 +130,8 @@ urlpatterns = [
 ```
 
 ## HOMEPAGE:
-![image](https://github.com/Manoj0079940/MathServer/assets/149366208/00de0217-7a37-4c93-8aec-4790536b27a7)
+![image](https://github.com/Manoj0079940/MathServer/assets/149366208/4dbc308a-abab-4112-a83e-21f98e4c0b1f)
+
 
 
 ## RESULT:
